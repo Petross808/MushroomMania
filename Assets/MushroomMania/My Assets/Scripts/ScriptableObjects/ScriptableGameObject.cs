@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// File from a previous project that I wrote https://github.com/Petross808/MazeEscapeUDP
+
 namespace Types
 {
     public class ScriptableGameObject : ScriptableObject

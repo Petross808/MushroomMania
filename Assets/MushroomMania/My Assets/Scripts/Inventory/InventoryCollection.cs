@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+// Modified file from Niall's repository https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
+
 namespace Items
 {
     //TODO - Fix Add on new ItemCategoryType

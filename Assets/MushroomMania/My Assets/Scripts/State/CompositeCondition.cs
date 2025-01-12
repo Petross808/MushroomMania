@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+// Modified file from Niall's repository https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
+
 namespace State
 {
     [CreateAssetMenu(menuName = "Conditions/Composite Condition")]

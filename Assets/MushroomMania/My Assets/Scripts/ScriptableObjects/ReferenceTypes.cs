@@ -1,6 +1,8 @@
 using Types;
 using UnityEngine;
 
+// Modified file from Niall's repository https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
+
 /// <summary>
 /// Contains a set of ScriptableObject(SO) data types (float, int, bool) and reference types that can switch between a local variable (e.g float) or reference to a shared variable (e.g. FloatVariable)
 /// </summary>
