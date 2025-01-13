@@ -10,7 +10,6 @@ namespace SelectionSystem
     public interface ISelector
     {
         void Check(Ray ray);
-        void SelectHovered();
         Transform GetHovered();
         RaycastHit GetHitInfo();
     }

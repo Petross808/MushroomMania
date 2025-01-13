@@ -10,7 +10,7 @@ namespace SelectionSystem
     public interface ISelectionResponse
     {
         void OnHoverStart(Transform hoveredTransform);
-        void OnHoverTick();
+        void OnHoverTick(Vector3 hoveredPosition);
         void OnHoverEnd();
         void OnSelect();
     }

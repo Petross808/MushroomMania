@@ -9,11 +9,22 @@ namespace SelectionSystem
     /// </summary>
     public class SelectionManager : MonoBehaviour
     {
-        [SerializeField] private IRayProvider _rayProvider;
-        [SerializeField] private ISelector _selector;
-        [SerializeField] private ISelectionResponse _response;
-
+        private IRayProvider _rayProvider;
+        private ISelector _selector;
+        private ISelectionResponse _response;
         private Transform _oldHovered;
+
+        private void Awake()
+        {
+            _rayProvider = GetComponent<IRayProvider>();
+            _selector = GetComponent<ISelector>();
+            _response = GetComponent<ISelectionResponse>();
+
+            if(_rayProvider == null || _selector == null || _response == null)
+            {
+                throw new System.Exception("Selection System not set up properly");
+            }
+        }
 
         private void FixedUpdate()
         {
@@ -25,18 +36,23 @@ namespace SelectionSystem
                 _oldHovered = _selector.GetHovered();
 
                 if(_oldHovered != null)
+                {
                     _response.OnHoverStart(_oldHovered);
+                    _response.OnHoverTick(_selector.GetHitInfo().point);
+                }
             }
             else if(_oldHovered != null)
             {
-                _response.OnHoverTick();
+                _response.OnHoverTick(_selector.GetHitInfo().point);
             }
         }
 
         public void TrySelect()
         {
             if(_oldHovered != null)
-                _selector.SelectHovered();
+            {
+                _response.OnSelect();
+            }
         }
     }
 }
