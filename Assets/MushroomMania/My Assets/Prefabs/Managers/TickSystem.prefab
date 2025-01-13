@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8607006275175528321
+--- !u!1 &3352583593552152560
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7093323135616844304}
-  - component: {fileID: 2972595179569751046}
+  - component: {fileID: 4527134315329497049}
+  - component: {fileID: 1406325336268342774}
   m_Layer: 0
-  m_Name: SelectionManager
+  m_Name: TickSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7093323135616844304
+--- !u!4 &4527134315329497049
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8607006275175528321}
+  m_GameObject: {fileID: 3352583593552152560}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2972595179569751046
+--- !u!114 &1406325336268342774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8607006275175528321}
+  m_GameObject: {fileID: 3352583593552152560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d78f42f091f551e45b6cbd8643f6559c, type: 3}
+  m_Script: {fileID: 11500000, guid: a171e1d9416721f4d9349dc2d4787988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tickTime: 0.1
+  _tickEvents:
+  - TickAmount: 1
+    GameEvent: {fileID: 11400000, guid: 038349d3dcb53a44aa73c57e4a290003, type: 2}
+  - TickAmount: 5
+    GameEvent: {fileID: 11400000, guid: 42f7298aa0dcc9a4ba305927ae90d551, type: 2}
