@@ -12,7 +12,7 @@ public class CharacterMovement : MonoBehaviour
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
-    }
+    } 
 
     public void GoToPosition(Vector3 position)
     {

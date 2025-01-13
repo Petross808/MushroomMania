@@ -6,7 +6,7 @@ using UnityEngine;
 using System.Linq;
 using System;
 
-// Modified file from Niall's repository https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
+// Modified file from Niall McGuinness' repository https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
 
 namespace Items
 {
