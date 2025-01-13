@@ -21,6 +21,13 @@ namespace Items
             //check if the inventory collection has been added
             if (_inventoryCollection == null)
                 throw new NullReferenceException("No inventory collection has been added");
+
+            ClearInventories();
+        }
+
+        private void OnDestroy()
+        {
+            ClearInventories();
         }
 
         /// <summary>
@@ -30,6 +37,11 @@ namespace Items
         public void CollectItem(ItemData data)
         {
             _inventoryCollection.Add(data);
+        }
+
+        public void ClearInventories()
+        {
+            _inventoryCollection.ClearInventories();
         }
     }
 }

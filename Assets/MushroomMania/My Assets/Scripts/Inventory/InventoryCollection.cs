@@ -72,6 +72,14 @@ namespace Items
             _onCollectionEmpty?.Raise();
             return _contents.Count == 0;
         }
+
+        public void ClearInventories()
+        {
+            foreach(var inv in _contents)
+            {
+                inv.Inventory.Clear();
+            }
+        }
     }
 
     [Serializable]
