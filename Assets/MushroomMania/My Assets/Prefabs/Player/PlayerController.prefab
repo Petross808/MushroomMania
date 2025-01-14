@@ -85,3 +85,4 @@ MonoBehaviour:
   _positionMouseEvent: {fileID: 11400000, guid: 1bb607235be9cb8478486660d314073f,
     type: 2}
   _deltaMouseEvent: {fileID: 11400000, guid: a59aed2052fa7e142b6598e3e279a2ac, type: 2}
+  _escapeButtonEvent: {fileID: 11400000, guid: a1b58af2f52f51d45bf5fb295bb6bdc2, type: 2}

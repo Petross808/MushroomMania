@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameEvent _rightClickReleasedEvent;
     [SerializeField] private Vector2GameEvent _positionMouseEvent;
     [SerializeField] private Vector2GameEvent _deltaMouseEvent;
+    [SerializeField] private GameEvent _escapeButtonEvent;
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         _input.actions["RightClick"].canceled += RightClickEnd;
         _input.actions["MousePosition"].performed += PositionMouse;
         _input.actions["MouseDelta"].performed += DeltaMouse;
+        _input.actions["Escape"].performed += EscapePressed;
     }
 
     private void OnDisable()
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
         _input.actions["RightClick"].canceled -= RightClickEnd;
         _input.actions["MousePosition"].performed -= PositionMouse;
         _input.actions["MouseDelta"].performed -= DeltaMouse;
+        _input.actions["Escape"].performed -= EscapePressed;
     }
 
     private void LeftClick(InputAction.CallbackContext context)
@@ -68,5 +71,10 @@ public class PlayerController : MonoBehaviour
     private void DeltaMouse(InputAction.CallbackContext context)
     {
         _deltaMouseEvent?.Raise(context.ReadValue<Vector2>());
+    }
+
+    private void EscapePressed(InputAction.CallbackContext context)
+    {
+        _escapeButtonEvent?.Raise();
     }
 }

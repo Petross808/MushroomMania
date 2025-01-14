@@ -1,4 +1,5 @@
 using EventSystem;
+using System.Collections;
 using UnityEngine;
 
 public class WalkMarker : MonoBehaviour
@@ -7,6 +8,8 @@ public class WalkMarker : MonoBehaviour
     [SerializeField] private GameObject _marker;
     
     private bool _leftClickDown;
+
+    private bool _disabled;
 
     public void LeftClickPressed()
     {
@@ -44,6 +47,15 @@ public class WalkMarker : MonoBehaviour
         if (!_marker.activeSelf)
             return;
 
+        if (_disabled)
+            return;
+
         _walkCommand?.Raise(_marker.transform.position);
     }
+
+    public void SetDisabled(bool disabled)
+    {
+        _disabled = disabled;
+    }
+
 }

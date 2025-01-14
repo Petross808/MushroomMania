@@ -49,7 +49,7 @@ namespace SelectionSystem
 
         public void TrySelect()
         {
-            if(_oldHovered != null)
+            if (_oldHovered != null)
             {
                 _response.OnSelect();
             }

@@ -1,0 +1,21 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MushroomMania/My%20Assets/Data/UI/DefaultStyleSheet.uss?fileID=7433441132597879392&amp;guid=300ed5423dbc80e42b47c9a1e2ffb204&amp;type=3#DefaultStyleSheet" />
+    <engine:VisualElement name="Root">
+        <engine:VisualElement style="height: 15%; flex-direction: row; justify-content: space-evenly; align-self: auto; align-items: center;">
+            <engine:VisualElement name="Icon" style="background-image: url(&quot;project://database/Assets/MushroomMania/Third%20Party%20Assets/Textures/GUI/Buttons%20&amp;%20Text/PremadeButtons_Check.png?fileID=2800000&amp;guid=8855833da22731445a1baae70f13cc09&amp;type=3#PremadeButtons_Check&quot;);">
+                <engine:Label name="RightNumber" data-source="project://database/Assets/MushroomMania/My%20Assets/Data/RightScore.asset?fileID=11400000&amp;guid=9e8eb60215fe19948adac7d752db2207&amp;type=2#RightScore" class="Number">
+                    <Bindings>
+                        <engine:DataBinding property="text" binding-mode="ToTarget" data-source-path="value" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+            <engine:VisualElement name="Icon" style="background-image: url(&quot;project://database/Assets/MushroomMania/Third%20Party%20Assets/Textures/GUI/Buttons%20&amp;%20Text/PremadeButtons_XRed.png?fileID=2800000&amp;guid=c597e2bbbe031b44db9b2803f4ae2825&amp;type=3#PremadeButtons_XRed&quot;);">
+                <engine:Label text="99" name="WrongNumber" data-source="project://database/Assets/MushroomMania/My%20Assets/Data/Variables/V_WrongScore.asset?fileID=11400000&amp;guid=088c5662b2c443d469b2da522f9d911c&amp;type=2#V_WrongScore" class="Number">
+                    <Bindings>
+                        <engine:DataBinding property="text" binding-mode="ToTarget" data-source-path="value" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

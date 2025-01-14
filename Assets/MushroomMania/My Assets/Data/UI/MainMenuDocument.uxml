@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MushroomMania/My%20Assets/Data/UI/DefaultStyleSheet.uss?fileID=7433441132597879392&amp;guid=300ed5423dbc80e42b47c9a1e2ffb204&amp;type=3#DefaultStyleSheet" />
+    <engine:VisualElement name="Root" style="background-image: url(&quot;project://database/Assets/MushroomMania/Third%20Party%20Assets/Textures/GUI/Boxes%20&amp;%20Banners/Box_Blue_Square.png?fileID=21300000&amp;guid=757f6fb5d012d514ca5f9117c1937fe3&amp;type=3#Box_Blue_Square&quot;);">
+        <engine:VisualElement name="Buttons" style="background-image: none;">
+            <engine:Button text="Play" name="PlayButton" />
+            <engine:Button text="Exit" name="ExitButton" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

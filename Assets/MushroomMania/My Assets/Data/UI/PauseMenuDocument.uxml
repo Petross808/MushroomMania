@@ -1,0 +1,10 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MushroomMania/My%20Assets/Data/UI/DefaultStyleSheet.uss?fileID=7433441132597879392&amp;guid=300ed5423dbc80e42b47c9a1e2ffb204&amp;type=3#DefaultStyleSheet" />
+    <engine:VisualElement name="Root">
+        <engine:VisualElement name="Buttons">
+            <engine:Label text="Pause" />
+            <engine:Button text="Resume" name="ResumeButton" />
+            <engine:Button text="Menu" name="MenuButton" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

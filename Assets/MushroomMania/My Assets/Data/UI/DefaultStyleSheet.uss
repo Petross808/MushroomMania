@@ -1,0 +1,61 @@
+Button {
+    -unity-font-style: bold-and-italic;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/MushroomMania/Third%20Party%20Assets/Textures/GUI/Buttons%20&%20Icons/IconButton_Small_Orange_Square.png?fileID=21300000&guid=d6a5786143446ea449414cd286a0ba76&type=3#IconButton_Small_Orange_Square");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    height: 100px;
+    font-size: 48px;
+}
+
+#Buttons {
+    top: 20%;
+    left: 35%;
+    position: absolute;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 30%;
+    height: 60%;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    background-image: url("project://database/Assets/MushroomMania/Third%20Party%20Assets/Textures/GUI/Boxes%20&%20Banners/Box_Blue_Square.png?fileID=21300000&guid=757f6fb5d012d514ca5f9117c1937fe3&type=3#Box_Blue_Square");
+}
+
+#Root {
+    flex-grow: 1;
+}
+
+Label {
+    -unity-text-align: upper-center;
+    -unity-font-style: bold-and-italic;
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    margin-bottom: 15%;
+}
+
+#Icon {
+    width: 64px;
+    height: 64px;
+    right: 50px;
+}
+
+.Number {
+    top: 2px;
+    left: 78px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 48px;
+    -unity-font-style: bold;
+    -unity-text-outline-width: 3px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}

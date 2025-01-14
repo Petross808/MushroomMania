@@ -5,7 +5,7 @@ using UnityEngine;
 namespace UISystem{
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private GameEvent _onUiChanged;
+        [SerializeField] private BoolGameEvent _onUiChanged;
 
         private readonly List<UIPanelScript> _uiScripts = new();
         public List<UIPanelScript> UiScripts => _uiScripts;
@@ -45,12 +45,12 @@ namespace UISystem{
             {
                 if (script.IsOpen && script.PausesGame)
                 {
-                    _onUiChanged?.Raise();
+                    _onUiChanged?.Raise(true);
                     return;
                 }
             }
 
-            _onUiChanged?.Raise();
+            _onUiChanged?.Raise(false);
         }
 
     }

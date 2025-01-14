@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6987089154197302464}
   - component: {fileID: 4975894074254098543}
   - component: {fileID: 6146623112960841109}
+  - component: {fileID: 9126951886980815926}
   m_Layer: 0
   m_Name: WalkMarker
   m_TagString: Untagged
@@ -184,6 +185,34 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: WalkMarker, Assembly-CSharp
         m_MethodName: LeftClickReleased
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9126951886980815926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115138671688602384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b17f70faf3de94eb150f9718d102f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: d62f6c6bc5aa27143baeeccaba5b221b, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3627302669226931726}
+        m_TargetAssemblyTypeName: WalkMarker, Assembly-CSharp
+        m_MethodName: SetDisabled
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
