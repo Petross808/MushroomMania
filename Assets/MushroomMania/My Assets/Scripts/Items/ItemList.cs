@@ -20,6 +20,15 @@ public class ItemList : ScriptableGameObject
         return _itemList[index];
     }
 
+    public ItemDataPrefab GetRandom(int maxIndex)
+    {
+        if (_itemList.Count == 0)
+            throw new System.Exception("Cannot get randomn item from list - Item list is empty");
+
+        int index = UnityEngine.Random.Range(0, Mathf.Min(_itemList.Count, maxIndex+1));
+        return _itemList[index];
+    }
+
 
     [Serializable]
     public struct ItemDataPrefab

@@ -179,6 +179,7 @@ Transform:
   - {fileID: 1453200596966619510}
   - {fileID: 9032696066187618912}
   - {fileID: 4590410803658590402}
+  - {fileID: 867898848124523997}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2660839911379599299
@@ -355,6 +356,123 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UISystem.UIPanelScript, Assembly-CSharp
         m_MethodName: Open
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &3308368842497939911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867898848124523997}
+  - component: {fileID: 1123816368784291933}
+  - component: {fileID: 3017212337959903865}
+  - component: {fileID: 8907343430918080598}
+  - component: {fileID: 1698367402867273158}
+  m_Layer: 0
+  m_Name: MushroomInfoUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &867898848124523997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308368842497939911}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2074636991281253385}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1123816368784291933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308368842497939911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 3327ca51f7035214485ba599d9c38647, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 4828f57737e482942afba38d4a8718e8,
+    type: 3}
+  m_SortingOrder: 0
+--- !u!114 &3017212337959903865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308368842497939911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 167185feed4cf234aa7c6c8345b018e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiManager: {fileID: 2660839911379599299}
+  _priority: 12
+  _closeableByInput: 1
+  _pausesGame: 1
+  _invertSetOpen: 0
+--- !u!114 &8907343430918080598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308368842497939911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4723d09e8a3d594cb08aa450d46e1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shownInUpgrade: {fileID: 11400000, guid: 6594b0969f595484aba82d464ee320b6, type: 2}
+  _levels:
+  - {fileID: 11400000, guid: c2986c03655aff544ad37e69d599f00e, type: 2}
+  - {fileID: 11400000, guid: 7b827b18b0d56f74aa5c492657f13c92, type: 2}
+  - {fileID: 11400000, guid: e23932295ce87594aae1e041c6494e0a, type: 2}
+  - {fileID: 11400000, guid: 609de38be6615704a92ea58743d26f9e, type: 2}
+  _onButtonClickEvent: {fileID: 11400000, guid: e964ac029b9566c4cac0d93e7dc52e4f,
+    type: 2}
+--- !u!114 &1698367402867273158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308368842497939911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c04c50baac1202468c462ebeaedd027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: f4a3fedc290b51646b867a34c1f99c9a, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8907343430918080598}
+        m_TargetAssemblyTypeName: MushroomInfoUIScript, Assembly-CSharp
+        m_MethodName: ShowUpgrade
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

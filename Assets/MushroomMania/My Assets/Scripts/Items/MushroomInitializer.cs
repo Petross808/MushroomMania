@@ -10,9 +10,11 @@ public class MushroomInitializer : MonoBehaviour
     private SelectableItem _selectableItem;
     private GameObject _prefabInstance;
     private int _nextRespawnTime;
+    private int _currentLevel;
 
     private void Awake()
     {
+        _currentLevel = 0;
         _selectableItem = GetComponent<SelectableItem>();
         _selectableItem.OnPickup += OnPickup;
         Init();
@@ -26,7 +28,7 @@ public class MushroomInitializer : MonoBehaviour
     public void Init()
     {
         _nextRespawnTime = Random.Range(_minRespawnTime, _maxRespawnTime);
-        var item = _possibleMushrooms.GetRandom();
+        var item = _possibleMushrooms.GetRandom(_currentLevel);
         
         _selectableItem.ItemData = item.ItemData;
         _selectableItem.Activated = true;
@@ -60,5 +62,11 @@ public class MushroomInitializer : MonoBehaviour
                 Init();
             }
         }
+    }
+
+    public void SetLevel(int level)
+    {
+        _currentLevel = level;
+        Init();
     }
 }

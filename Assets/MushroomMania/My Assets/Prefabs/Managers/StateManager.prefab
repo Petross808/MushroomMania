@@ -49,7 +49,11 @@ MonoBehaviour:
   _resetAllConditionsOnStart: 1
   _winCondition: {fileID: 11400000, guid: 8517fd31b92d3a641a51a9d327221491, type: 2}
   _loseCondition: {fileID: 11400000, guid: 2e90ad5b909db4f43a699bbb687a764b, type: 2}
-  _achievementConditions: []
+  _achievementConditions:
+  - {fileID: 11400000, guid: 05ba3664ca4347c478a5031e603d81b3, type: 2}
+  - {fileID: 11400000, guid: 362e377a6762ed94fa10668beddb2953, type: 2}
+  - {fileID: 11400000, guid: e97ae58b6151eab4cbd1feb09aae944d, type: 2}
+  - {fileID: 11400000, guid: 5b5e5174a206f7f4ea71d6b5170bc4d0, type: 2}
   _onGameWon: {fileID: 11400000, guid: 27afd3c8bdc3a37459642515c1a1e29b, type: 2}
   _onGameLost: {fileID: 11400000, guid: 6b7bf6d671fcfec49860f0405224c1ff, type: 2}
 --- !u!114 &4358858751910171013

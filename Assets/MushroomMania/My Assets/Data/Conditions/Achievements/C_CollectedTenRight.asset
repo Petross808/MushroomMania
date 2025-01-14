@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bdacefe1f1effe48993eb4a4a20ce71, type: 3}
-  m_Name: C_LessThanTenRight
+  m_Name: C_CollectedTenRight
   m_EditorClassIdentifier: 
   _editorName: 
   _editorDescription: 
   _evaluateStrategy: 1
   _priorityLevel: 5
-  _onConditionMet: {fileID: 0}
+  _onConditionMet: {fileID: 11400000, guid: 8949753aba1613140be9184bc6d74291, type: 2}
   _isMet: 0
   _timeMet: -1
   _value: {fileID: 11400000, guid: 9e8eb60215fe19948adac7d752db2207, type: 2}
-  _compareType: 0
+  _compareType: 4
   _threshold: 10
