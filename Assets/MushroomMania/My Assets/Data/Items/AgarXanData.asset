@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _editorName: 
   _editorDescription: 
-  itemCategory: 7
-  itemType: 23
+  itemCategory: 0
+  itemType: 1
   uiIcon: {fileID: 0}
   audioClip: {fileID: 0}
   audioPosition: {x: 0, y: 0, z: 0}

@@ -15,11 +15,11 @@ namespace Items
     {
         [SerializeField]
         [Tooltip("The category of item")]
-        private ItemCategoryType itemCategory = ItemCategoryType.Consumable;
+        private ItemCategoryType itemCategory;
 
         [SerializeField]
         [Tooltip("The type of item")]
-        private ItemType itemType = ItemType.Resource;
+        private ItemType itemType;
 
         [SerializeField]
         [Tooltip("The sprite that represents this item in the UI")]

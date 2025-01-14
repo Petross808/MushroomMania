@@ -15,5 +15,5 @@ MonoBehaviour:
   _editorName: 
   _editorDescription: 
   _contents: []
-  _onInventoryChange: {fileID: 0}
+  _onInventoryChange: {fileID: 11400000, guid: 440c6f42675c917408200aac35b2ceda, type: 2}
   _onInventoryClear: {fileID: 0}

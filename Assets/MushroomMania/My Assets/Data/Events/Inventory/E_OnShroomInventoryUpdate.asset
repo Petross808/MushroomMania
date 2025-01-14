@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6f2b79b621a4e04e9322d765e4d76d1, type: 3}
-  m_Name: SuiBovData
+  m_Script: {fileID: 11500000, guid: 1ac05659e8b0b7e4690e537455ed2738, type: 3}
+  m_Name: E_OnShroomInventoryUpdate
   m_EditorClassIdentifier: 
   _editorName: 
   _editorDescription: 
-  itemCategory: 0
-  itemType: 0
-  uiIcon: {fileID: 0}
-  audioClip: {fileID: 0}
-  audioPosition: {x: 0, y: 0, z: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   _editorName: 
   _editorDescription: 
   _contents:
-  - ItemCategoryType: 7
+  - ItemCategoryType: 0
     Inventory: {fileID: 11400000, guid: 012421abb296f5a40b82a60e2bbdd017, type: 2}
   _onCollectionChange: {fileID: 0}
   _onCollectionEmpty: {fileID: 0}
