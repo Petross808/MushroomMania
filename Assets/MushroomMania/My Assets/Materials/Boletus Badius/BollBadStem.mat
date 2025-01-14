@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 2100000, guid: dc886ce4ed61af447999aec2fcf2cdd6, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _ENVIRONMENTREFLECTIONS_OFF
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   - _SPECULAR_SETUP
   m_InvalidKeywords: []
