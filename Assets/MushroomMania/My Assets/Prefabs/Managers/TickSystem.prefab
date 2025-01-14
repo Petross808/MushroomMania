@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3352583593552152560}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -50,3 +50,5 @@ MonoBehaviour:
     GameEvent: {fileID: 11400000, guid: 038349d3dcb53a44aa73c57e4a290003, type: 2}
   - TickAmount: 5
     GameEvent: {fileID: 11400000, guid: 42f7298aa0dcc9a4ba305927ae90d551, type: 2}
+  - TickAmount: 10
+    GameEvent: {fileID: 11400000, guid: b2880c49086eede4c89ffe6732521f17, type: 2}

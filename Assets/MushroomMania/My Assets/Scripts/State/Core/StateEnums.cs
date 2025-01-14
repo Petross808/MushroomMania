@@ -44,4 +44,14 @@ namespace State
         Low = 4,
         Lowest = 5
     }
+
+    [Serializable]
+    public enum CompareType
+    {
+        LessThan,
+        LessThanOrEqual,
+        Equal,
+        GreaterThan,
+        GreaterThanOrEqual
+    }
 }

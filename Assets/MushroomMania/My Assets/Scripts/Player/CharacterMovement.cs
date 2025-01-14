@@ -14,9 +14,12 @@ public class CharacterMovement : MonoBehaviour
 
     private bool _idleLastTick;
 
+    private Vector3 _startingPos;
+
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
+        _startingPos = transform.position;
     } 
 
     public void GoToPosition(Vector3 position)
@@ -47,5 +50,11 @@ public class CharacterMovement : MonoBehaviour
         }
 
         _idleLastTick = isIdle;
+    }
+
+    public void Restart()
+    {
+        Stop();
+        _agent.Warp(_startingPos);
     }
 }

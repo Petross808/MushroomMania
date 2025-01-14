@@ -9,7 +9,7 @@
                     "name": "LeftClick",
                     "type": "Button",
                     "id": "08d9487c-cb06-4e8f-959f-fe3d147fc718",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -18,7 +18,16 @@
                     "name": "RightClick",
                     "type": "Button",
                     "id": "8b4c7a1d-bf59-48a3-8b4d-3826c2cb71b9",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MiddleClick",
+                    "type": "Button",
+                    "id": "016a513c-dae8-4fdb-a527-c1a20ca4dffa",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -104,6 +113,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "095eaaef-5342-4d0b-a8db-ba9a8b5ae0c1",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MiddleClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

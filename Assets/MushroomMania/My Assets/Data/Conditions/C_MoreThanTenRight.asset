@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdacefe1f1effe48993eb4a4a20ce71, type: 3}
+  m_Name: C_MoreThanTenRight
+  m_EditorClassIdentifier: 
+  _editorName: 
+  _editorDescription: 
+  _evaluateStrategy: 1
+  _priorityLevel: 5
+  _onConditionMet: {fileID: 0}
+  _isMet: 0
+  _timeMet: -1
+  _value: {fileID: 11400000, guid: 9e8eb60215fe19948adac7d752db2207, type: 2}
+  _compareType: 4
+  _threshold: 10

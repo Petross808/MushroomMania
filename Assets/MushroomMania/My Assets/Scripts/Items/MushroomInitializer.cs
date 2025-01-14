@@ -42,15 +42,23 @@ public class MushroomInitializer : MonoBehaviour
     public void OnPickup()
     {
         _prefabInstance.SetActive(false);
+        _nextRespawnTime = Random.Range(_minRespawnTime, _maxRespawnTime);
     }
 
     public void Tick()
     {
-        if (_selectableItem.Activated)
-            return;
-
         _nextRespawnTime--;
         if (_nextRespawnTime == 0)
-            Init();
+        {
+            if(_prefabInstance.activeSelf)
+            {
+                _prefabInstance.SetActive(false);
+                _nextRespawnTime = 5;
+            }
+            else
+            {
+                Init();
+            }
+        }
     }
 }

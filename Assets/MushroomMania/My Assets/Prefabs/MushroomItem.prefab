@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8372964987177345730}
   - component: {fileID: 4741968028332981956}
   - component: {fileID: 8232649250641426646}
+  - component: {fileID: 5911051488780108123}
   m_Layer: 6
   m_Name: MushroomItem
   m_TagString: Untagged
@@ -50,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _possibleMushrooms: {fileID: 11400000, guid: fade4cf3533f4214aa00eb13866c9b1b, type: 2}
-  _minRespawnTime: 10
+  _minRespawnTime: 20
   _maxRespawnTime: 30
 --- !u!114 &-3669982915714017171
 MonoBehaviour:
@@ -155,13 +156,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0a1f8ccad697242ab43136bb758bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _event: {fileID: 11400000, guid: 42f7298aa0dcc9a4ba305927ae90d551, type: 2}
+  _event: {fileID: 11400000, guid: b2880c49086eede4c89ffe6732521f17, type: 2}
   _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8721236150362900770}
         m_TargetAssemblyTypeName: MushroomInitializer, Assembly-CSharp
         m_MethodName: Tick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5911051488780108123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062918420801383084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0a1f8ccad697242ab43136bb758bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: 47e78ae65de3593459811f869cb757c3, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8721236150362900770}
+        m_TargetAssemblyTypeName: MushroomInitializer, Assembly-CSharp
+        m_MethodName: Init
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

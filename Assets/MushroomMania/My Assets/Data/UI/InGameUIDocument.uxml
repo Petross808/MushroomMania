@@ -17,5 +17,10 @@
                 </engine:Label>
             </engine:VisualElement>
         </engine:VisualElement>
+        <engine:Label text="100" data-source="project://database/Assets/MushroomMania/My%20Assets/Data/Variables/V_Timer.asset?fileID=11400000&amp;guid=403cf85455f108d45a85ca49fd96b24f&amp;type=2#V_Timer" class="Number" style="position: absolute; bottom: 5%; top: auto; left: auto; right: auto; flex-grow: 1; align-items: center; align-self: center;">
+            <Bindings>
+                <engine:DataBinding property="text" binding-mode="ToTarget" data-source-path="value" />
+            </Bindings>
+        </engine:Label>
     </engine:VisualElement>
 </engine:UXML>

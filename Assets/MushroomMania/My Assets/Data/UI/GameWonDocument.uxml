@@ -1,0 +1,22 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MushroomMania/My%20Assets/Data/UI/DefaultStyleSheet.uss?fileID=7433441132597879392&amp;guid=300ed5423dbc80e42b47c9a1e2ffb204&amp;type=3#DefaultStyleSheet" />
+    <engine:VisualElement name="Root">
+        <engine:VisualElement name="Buttons">
+            <engine:Label text="You Won" name="Label" style="margin-bottom: 5%;" />
+            <engine:Label text="Final Score&#10;&#10;Right&#x9;Wrong" style="font-size: 24px; padding-bottom: 0; margin-bottom: 0;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; justify-content: space-around; align-self: auto; align-items: center;">
+                <engine:Label text="0" data-source="project://database/Assets/MushroomMania/My%20Assets/Data/Variables/V_RightScore.asset?fileID=11400000&amp;guid=9e8eb60215fe19948adac7d752db2207&amp;type=2#V_RightScore" class="Number" style="left: 0; top: 0;">
+                    <Bindings>
+                        <engine:DataBinding property="text" binding-mode="ToTarget" data-source-path="value" />
+                    </Bindings>
+                </engine:Label>
+                <engine:Label text="0" data-source="project://database/Assets/MushroomMania/My%20Assets/Data/Variables/V_WrongScore.asset?fileID=11400000&amp;guid=088c5662b2c443d469b2da522f9d911c&amp;type=2#V_WrongScore" class="Number" style="top: 0; left: 0;">
+                    <Bindings>
+                        <engine:DataBinding property="text" binding-mode="ToTarget" data-source-path="value" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+            <engine:Button text="Menu" name="MenuButton" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

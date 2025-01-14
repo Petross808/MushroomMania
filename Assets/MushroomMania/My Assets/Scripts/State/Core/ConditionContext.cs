@@ -1,3 +1,5 @@
+using Items;
+using TypesAdvanced;
 using UnityEngine;
 
 // Modified file from Niall McGuinness' repository https://github.com/nmcguinness/2024-25-GD3A-IntroToUnity
