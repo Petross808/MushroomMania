@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0a1f8ccad697242ab43136bb758bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _event: {fileID: 11400000, guid: 4c92c689331a0804d97d8bffe7aaf894, type: 2}
+  _event: {fileID: 11400000, guid: e5699c728092fc0478c07d1d9d1557ad, type: 2}
   _response:
     m_PersistentCalls:
       m_Calls:
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0a1f8ccad697242ab43136bb758bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _event: {fileID: 11400000, guid: 2c7fb78f93460244aaff7ab0df3d3d96, type: 2}
+  _event: {fileID: 11400000, guid: eddd4e43f8eaf8648b696c7bd1774d1d, type: 2}
   _response:
     m_PersistentCalls:
       m_Calls:
@@ -168,6 +168,9 @@ GameObject:
   - component: {fileID: 5852347428142266489}
   - component: {fileID: 4333748593025267872}
   - component: {fileID: 3887263020418332456}
+  - component: {fileID: 4496931302777331707}
+  - component: {fileID: 7948479981320235827}
+  - component: {fileID: 5356470574981034234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -293,3 +296,75 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &4496931302777331707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2473618489683464660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08165d3c37e99b24da64e20b6c947bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _primaryParent: {fileID: 4787544102008241044}
+  _secondaryParent: {fileID: 0}
+  _primaryPosition: {x: 0, y: 0, z: -15}
+  _secondaryPosition: {x: 0, y: 0, z: -2}
+--- !u!114 &7948479981320235827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2473618489683464660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df292c87e9ebe64438d14208a0ba54ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: cb6c5a7257937b641be87dea95ade42a, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4496931302777331707}
+        m_TargetAssemblyTypeName: CameraSwap, Assembly-CSharp
+        m_MethodName: SetSecondary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5356470574981034234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2473618489683464660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0a1f8ccad697242ab43136bb758bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: 2c7fb78f93460244aaff7ab0df3d3d96, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4496931302777331707}
+        m_TargetAssemblyTypeName: CameraSwap, Assembly-CSharp
+        m_MethodName: SetPrimary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

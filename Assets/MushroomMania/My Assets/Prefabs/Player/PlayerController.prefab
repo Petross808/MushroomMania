@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2367233416304286041}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -78,9 +78,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftClickEvent: {fileID: 11400000, guid: 4a11b62f7f8627c4ea949b04effc5ecf, type: 2}
   _rightClickEvent: {fileID: 11400000, guid: 4c92c689331a0804d97d8bffe7aaf894, type: 2}
+  _middleClickEvent: {fileID: 11400000, guid: e5699c728092fc0478c07d1d9d1557ad, type: 2}
   _leftClickReleasedEvent: {fileID: 11400000, guid: 0ff08ec663f5cf242b855122b63b6778,
     type: 2}
   _rightClickReleasedEvent: {fileID: 11400000, guid: 2c7fb78f93460244aaff7ab0df3d3d96,
+    type: 2}
+  _middleClickReleasedEvent: {fileID: 11400000, guid: eddd4e43f8eaf8648b696c7bd1774d1d,
     type: 2}
   _positionMouseEvent: {fileID: 11400000, guid: 1bb607235be9cb8478486660d314073f,
     type: 2}

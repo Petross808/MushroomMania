@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _possibleMushrooms: {fileID: 11400000, guid: fade4cf3533f4214aa00eb13866c9b1b, type: 2}
-  _minRespawnTime: 20
-  _maxRespawnTime: 30
+  _minRespawnTime: 30
+  _maxRespawnTime: 60
 --- !u!114 &-3669982915714017171
 MonoBehaviour:
   m_ObjectHideFlags: 0
